@@ -23,7 +23,7 @@ public class Creature  extends Actor
     private AntHill home;
 
     /**
-     * Crtae a new creature with neutral movement (movement speed is zero).
+     * Create a new creature with neutral movement (movement speed is zero).
      */
     public Creature()
     {
