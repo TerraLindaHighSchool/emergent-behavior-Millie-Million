@@ -9,10 +9,14 @@ import greenfoot.*;
  */
 public class Ant extends Creature
 {
+    private final int MAX_PH_AVAILABLE = 16;
+    private final int TIME_FOLLOWING_TRAIL = 30;
     private boolean carryingFood = false;
     private GreenfootImage image1;
     private GreenfootImage image2;
-    
+    private int phAvailable = MAX_PH_AVAILABLE;
+    private int followTrailTimeRemaining = 0;
+       
     /**
      * Create an ant with a given home hill. The initial speed is zero (not moving).
      */
@@ -46,8 +50,23 @@ public class Ant extends Creature
     
     private void searchForFood()
     {
-        randomWalk();
         checkForFood();
+        if (followTrailTimeRemaining == 0)
+        {
+            if(smellsPheromone() == true)
+            {
+                walkTowardsPheromoneCenter();
+            }
+            else
+            {
+                randomWalk();
+            }
+        }
+        else
+        {
+            followTrailTimeRemaining --;
+            walkAwayFromHome();
+        }
     }
     
     private void checkForFood()
@@ -66,6 +85,7 @@ public class Ant extends Creature
         if (carryingFood == true)
         {
             walkTowardsHome();
+            handlePheromoneDrop();
             if (atHome())
             {
                 setImage(image1);
@@ -77,5 +97,20 @@ public class Ant extends Creature
         {
             searchForFood();
         }
+    }
+    
+    private void handlePheromoneDrop()
+    {
+        
+    }
+    
+    private boolean smellsPheromone()
+    {
+        return true;
+    }
+    
+    private void walkTowardsPheromoneCenter()
+    {
+        
     }
 }
