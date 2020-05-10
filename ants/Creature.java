@@ -7,8 +7,8 @@ import greenfoot.*;
  * that the creature will move in the next step. The value for these is capped by the SPEED constant: 
  * the delta values will always be in the range [-SPEED..SPEED].
  * 
- * @author mik
- * @version 1.0
+ * @author Millie Harrison
+ * @version 5/10/20
  */
 public class Creature  extends Actor
 {
