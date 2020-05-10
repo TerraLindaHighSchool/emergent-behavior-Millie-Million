@@ -4,7 +4,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * Write a description of class Pheromone here.
  * 
  * @author Millie Harrison 
- * @version 5/6/20
+ * @version 5/10/20
  */
 public class Pheromone extends Actor
 {
