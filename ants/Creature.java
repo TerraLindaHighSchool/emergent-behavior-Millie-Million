@@ -8,7 +8,7 @@ import greenfoot.*;
  * the delta values will always be in the range [-SPEED..SPEED].
  * 
  * @author Millie Harrison
- * @version 5/11/20
+ * @version 5/12/20
  */
 public class Creature  extends Actor
 {
