@@ -3,8 +3,8 @@ import greenfoot.*;
 /**
  * Counter that displays some taxt and a number.
  * 
- * @author Michael Kölling
- * @version 1.1
+ * @author Millie Harrison
+ * @version 5/12/20
  */
 public class Counter extends Actor
 {
