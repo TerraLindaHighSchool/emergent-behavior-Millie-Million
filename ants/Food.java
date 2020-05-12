@@ -5,7 +5,7 @@ import java.util.Random;
  * Write a description of class Food here.
  * 
  * @author Millie Harrison
- * @version 4/28/20
+ * @version 5/12/20
  */
 public class Food extends Actor
 {
