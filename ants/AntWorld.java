@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, and Greenfoot)
 /**
  * The world where ants live.
  * 
- * @author Michael Kölling
- * @version 0.1
+ * @author Millie Harrison
+ * @version 5/12/20
  */
 public class AntWorld extends World
 {
@@ -19,6 +19,14 @@ public class AntWorld extends World
         super(SIZE, SIZE, 1);
         setPaintOrder(Ant.class, AntHill.class);
         prepare();
+    }
+    
+    public void act()
+    {
+        if (getObjects(Pheromone.class).size() == 0 && getObjects(Food.class).size() == 0)
+        {
+            Greenfoot.stop();
+        }
     }
 
     /**
