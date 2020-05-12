@@ -3,8 +3,8 @@ import greenfoot.*;
 /**
  * A hill full of ants.
  * 
- * @author Michael Kölling
- * @version 1.1
+ * @author Millie Harrison
+ * @version 5/12/20
  */
 public class AntHill extends Actor
 {
